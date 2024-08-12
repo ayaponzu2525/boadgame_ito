@@ -1,0 +1,118 @@
+/* 全体の背景とフォント設定 */
+body {
+    font-family: 'Bangers', cursive;
+    background: url('images/gameimage.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* オーバーレイの色 */
+    z-index: -1;
+}
+
+
+
+/* メインコンテナのスタイリング */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* コンテンツの中央配置 */
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* 最大幅を広げる */
+    padding: 20px;
+}
+
+/* 中央のコンテナ */
+.container-center {
+    text-align: center;
+    background: rgba(233, 194, 255, 0.9); /* 背景を少し濃くして目立たせる */
+    padding: 40px; /* パディングを増やして余裕を持たせる */
+    border-radius: 20px; /* ボーダー半径を大きくして角を丸くする */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* ボックスシャドウを強調する */
+    flex: 1; /* コンテンツの幅を広げる */
+}
+
+/* ボタンのスタイリング */
+.game-btn {
+    background-color: #4506ff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* ボタンのサイズを大きくする */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px; /* フォントサイズを大きくする */
+    border-radius: 15px; /* ボーダー半径を大きくする */
+    margin: 10px; /* ボタンのマージンを増やす */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.game-btn:hover {
+    background-color: #1658ff;
+    transform: scale(1.1); /* ホバー時のスケールを大きくする */
+}
+
+/* タイトルとテキストのスタイリング */
+h1 {
+    color: #333;
+    font-size: 36px; /* タイトルのフォントサイズを大きくする */
+    margin-bottom: 20px; /* タイトル下部のマージンを追加 */
+}
+
+.info-text {
+    color: #555;
+    font-size: 24px; /* テキストのフォントサイズを大きくする */
+}
+
+/* お題表示のスタイリング */
+.prompt-container {
+    margin: 20px 0;
+    background: #41c054; /* 明るい背景色で目立たせる */
+    padding: 20px; /* パディングを増やして内容に余裕を持たせる */
+    border-radius: 15px; /* ボーダー半径を大きくする */
+    box-shadow: 0 8px 16px rgba(0, 87, 82, 0.3); /* ボックスシャドウを調整 */
+    text-align: center; /* 中央にテキストを配置 */
+}
+
+/* お題の文字のスタイリング */
+.prompt-text {
+    font-size: 40px; /* フォントサイズを大きくして目立たせる */
+    font-weight: bold; /* 太字で強調する */
+    color: #ffffff; /* 強い色で文字を際立たせる */
+    text-shadow: 
+        3px 3px 0 #00e5ff,  
+        -3px -3px 0 #00e5ff,  
+        3px -3px 0 #00e5ff,  
+        -3px 3px 0 #00e5ff; /* 文字の輪郭を黒で追加する */
+    margin: 0; /* 上下のマージンをリセット */
+    line-height: 1.2; /* 行間を狭くして文字を密集させる */
+}
+
+
+/* 画像のスタイリング */
+#hiddenImage {
+    display: block;  
+    margin: 20px auto;  /* 上下のマージンを追加 */
+    max-width: 100%;
+    height: auto;
+}

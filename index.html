@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>価値観並び替えゲーム</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <div class="container-center">
+                <h1>価値観並び替えゲーム</h1>
+                <p id="roundCounter" class="info-text">1 回目</p>
+                <div id="promptContainer" class="prompt-container">
+                    <p id="prompt" class="prompt-text"></p>
+                    <img id="hiddenImage" src="hidden.gif" alt="隠された状態" style="display: none;">
+                </div>
+                <div class="button-group">
+                    <button id="startBtn" class="game-btn">開始する</button>
+                    <button id="nextBtn" class="game-btn" style="display: none;">次へ</button>
+                    <button id="endBtn" class="game-btn" style="display: none;">終了する</button>
+                    <button id="toggleHideBtn" class="game-btn" style="display: none;">隠す</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
