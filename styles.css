@@ -100,10 +100,10 @@ h1 {
     font-weight: bold; /* 太字で強調する */
     color: #ffffff; /* 強い色で文字を際立たせる */
     text-shadow: 
-        3px 3px 0 #00e5ff,  
-        -3px -3px 0 #00e5ff,  
-        3px -3px 0 #00e5ff,  
-        -3px 3px 0 #00e5ff; /* 文字の輪郭を黒で追加する */
+        2px 2px 0 #00e5ff,  
+        -2px -2px 0 #00e5ff,  
+        2px -2px 0 #00e5ff,  
+        -2px 2px 0 #00e5ff; /* 文字の輪郭を黒で追加する */
     margin: 0; /* 上下のマージンをリセット */
     line-height: 1.2; /* 行間を狭くして文字を密集させる */
 }
